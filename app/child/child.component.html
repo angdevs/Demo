@@ -1,0 +1,10 @@
+<div>
+    <h2>In Child Section</h2>
+    <h3>Accept the string from parent is {{toChild}}</h3>
+    <p>In Parent length {{toChild.length}}</p>
+</div>
+
+<div> 
+    <input type="text" #childVal name="childName">
+    <button (click)="sendVal(childVal.value);">Click Here</button>
+</div>

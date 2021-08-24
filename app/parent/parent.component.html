@@ -1,0 +1,10 @@
+<div>
+    <h2>In Parent Section</h2>
+    <input type="text" [(ngModel)]="name"> 
+    <p>In Parent text value is {{name}}</p>
+    <p>In Parent text value length is {{name.length}}</p>
+    <p>Data come from child is {{message}}</p>
+    <p>Data come from child's length is {{message.length}}</p>
+</div>
+
+<app-child (newItemEvent)="message=$event" [toChild]="name"></app-child>
